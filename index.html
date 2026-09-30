@@ -334,7 +334,7 @@
 
     @media (max-width: 820px) {
       .wrap { width: min(100% - 30px, 640px); }
-      .section { padding: 82px 0; }
+      .section { padding: 76px 0; }
       .hero { min-height: auto; padding: 92px 0 122px; }
       .hero-grid, .question-grid, .map-showcase, .matt-grid, .venues-head, .privacy-grid, .cities-head, .consumer-grid { grid-template-columns: 1fr; }
       .hero-grid { gap: 68px; }
@@ -423,16 +423,19 @@
         z-index: 4;
         transform: none !important;
         will-change: auto;
+        opacity: .76;
       }
-      .candy-cocktail { --candy-width: clamp(84px, 23vw, 112px); top: 18px; right: -24px; opacity: .52; }
-      .candy-bar { --candy-width: clamp(78px, 21vw, 104px); top: 16px; right: -22px; opacity: .48; }
-      .candy-club { --candy-width: clamp(92px, 25vw, 122px); top: 20px; left: -28px; opacity: .46; }
-      .candy-salmon { --candy-width: clamp(82px, 22vw, 108px); top: 18px; right: -24px; bottom: auto; opacity: .48; }
-      .candy-concert { --candy-width: clamp(88px, 24vw, 116px); top: 20px; right: -28px; opacity: .47; }
-      .candy-cafe { --candy-width: clamp(80px, 22vw, 108px); top: 18px; right: -24px; bottom: auto; opacity: .47; }
-      .candy-plated { --candy-width: clamp(76px, 21vw, 102px); top: 20px; left: -24px; opacity: .48; }
-      .venue-visual { grid-template-columns: clamp(92px, 28vw, 112px) minmax(0, 1fr); gap: 16px; margin-top: 52px; }
-      .venue-visual > .candy-yacht { --candy-width: auto; width: 100%; margin-top: 24px; opacity: .78; transform: none !important; }
+      .candy-frame img { filter: saturate(.94) contrast(1.12) brightness(.82); }
+      .candy-cocktail { --candy-width: clamp(84px, 23vw, 112px); top: 18px; right: -14px; }
+      .candy-bar { --candy-width: clamp(78px, 21vw, 104px); top: 16px; right: -12px; }
+      .candy-club { --candy-width: clamp(92px, 25vw, 122px); top: 20px; left: -16px; opacity: .74; }
+      .candy-salmon { --candy-width: clamp(82px, 22vw, 108px); top: 18px; right: -14px; bottom: auto; }
+      .candy-concert { --candy-width: clamp(88px, 24vw, 116px); top: 20px; right: -16px; opacity: .74; }
+      .candy-cafe { --candy-width: clamp(80px, 22vw, 108px); top: 18px; right: -14px; bottom: auto; opacity: .74; }
+      .candy-plated { --candy-width: clamp(76px, 21vw, 102px); top: 20px; left: -14px; }
+      .venue-visual { grid-template-columns: clamp(68px, 20vw, 86px) minmax(0, 1fr); gap: 14px; margin-top: 46px; }
+      .venue-visual > .candy-yacht { --candy-width: auto; width: 100%; margin-top: 28px; opacity: .88; transform: none !important; }
+      .venue-visual > .candy-yacht img { filter: saturate(.98) contrast(1.1) brightness(.86); }
     }
     @media (min-width: 821px) and (max-width: 1120px) {
       .candy-frame { opacity: .3; }
